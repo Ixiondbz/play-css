@@ -1,0 +1,50 @@
+.block{
+    /* display: block; */
+    border: 1px solid black;
+
+}
+
+.inline{
+    /* display: inline; */
+    border: 1px solid black;
+
+}
+
+.flex{
+    display: flex;
+}
+
+p
+{
+    border: 1px solid black;
+}
+
+h1
+{
+    border: 1px solid black;
+}
+
+a
+{
+    border: 1px solid black;
+}
+
+span
+{
+    border: 1px solid black;
+}
+
+em
+{
+    border: 1px solid black;
+}
+
+strong
+{
+    border: 1px solid black;
+}
+
+inline
+{
+    border: 1px solid black;
+}

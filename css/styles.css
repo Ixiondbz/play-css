@@ -1,50 +1,146 @@
-.block{
-    /* display: block; */
-    border: 1px solid black;
-
-}
-
-.inline{
-    /* display: inline; */
-    border: 1px solid black;
-
-}
-
-.flex{
+.flex {
     display: flex;
 }
 
-p
-{
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.border-2px-red {
+    border: 2px solid red;
+}
+
+p,
+h1,
+a,
+span,
+em,
+strong,
+.box,
+.inline,
+.block {
     border: 1px solid black;
 }
 
-h1
-{
-    border: 1px solid black;
+.standard_css_box_model {
+    /* content box */
+    width: 350px;
+    height: 150px;
+    /* inline-size: ; */
+    /* block-size: ; */
+
+    /* padding box */
+    padding: 25px;
+
+    /* border box */
+    border: 2px solid red;
+
+    /* margin box */
+    margin: 10px;
 }
 
-a
-{
-    border: 1px solid black;
+.redtext {
+    color: red;
 }
 
-span
-{
-    border: 1px solid black;
+.blackborder {
+    border: 2px solid black;
 }
 
-em
-{
-    border: 1px solid black;
+.alternative_css_box_model {
+    box-sizing: border-box;
+    width: 350px;
+    inline-size: 350px;
+    height: 150px;
+    block-size: 150px;
+    margin: 10px;
+    padding: 25px;
+
+    border: 2px solid red;
+
 }
 
-strong
-{
-    border: 1px solid black;
+.alternate {
+    box-sizing: border-box;
+    border: 5px solid rebeccapurple;
+    width: 388.89px;
+    height: 238.89px;
+    padding: 40px;
+    margin: 40px;
+
 }
 
-inline
-{
-    border: 1px solid black;
+.standard {
+    border: 5px solid rebeccapurple;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+}
+
+.figure_out_border {
+    box-sizing: border-box;
+    inline-size: 400px;
+    block-size: 200px;
+
+    border-style: solid;
+    border-color: purple;
+    border-width: 18px;
+
+    border-top-width: 6px;
+    border-top-color: red;
+    border-top-style: dotted;
+
+    border-bottom-width: 10px;
+    border-bottom-color: blue;
+
+    border-left-width: 10px;
+    border-left-color: green;
+
+    border-right-width: 10px;
+    border-right-color: yellow;
+}
+
+.inline_block_box {
+    /* display: block;
+    box-sizing: border-box;
+    inline-size: 400px;
+    block-size: 200px;
+    border: 1px solid black; */
+}
+
+.outerbox {
+
+    box-sizing: border-box;
+    inline-size: 400px;
+    block-size: 200px;
+    border: 2px solid black;
+}
+
+.inline_block {
+    display: inline-block;
+    /* display: inline; */
+    /* display: block; */
+
+    border: 2px solid red;
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+}
+
+.inline {
+    width: 100123px;
+    height: 11150px;
+    padding: 5px;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
 }

@@ -1,0 +1,24 @@
+.border-2px-black{
+    border: 2px solid black;
+}
+.border-1px-red{
+    border: 2px solid red;
+}
+
+.display-flex{
+    display: flex;
+    
+}
+.display-block{
+    display: flex;
+    
+}
+
+.display-inline-flex
+{
+    display: inline-flex;
+}
+
+.innerbox{
+    flex: 1;
+}

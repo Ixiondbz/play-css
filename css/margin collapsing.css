@@ -1,0 +1,50 @@
+.border-2px-black {
+    border: 2px solid black;
+}
+
+.border-1px-red {
+    border: 2px solid red;
+}
+
+.border-1px-blue {
+    border: 2px solid blue;
+}
+
+.border-1px-green {
+    border: 2px solid green;
+}
+
+.a {
+    margin-bottom: 50px;
+}
+
+.b {
+    margin-top: 30px;
+
+}
+
+.c {
+    margin-bottom: -30px;
+}
+
+.d {
+    margin-top: -10px;
+
+}
+
+.e {
+    margin-bottom: 50px;
+}
+
+.f {
+    margin-top: -30px;
+
+}
+.g {
+    margin-bottom: -20px;
+}
+
+.h {
+    margin-top: 50px;
+
+}

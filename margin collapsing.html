@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/margin collapsing.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <h1>Margin collapsing</h1>
+    <div class="outerbox border-2px-black">
+        <p>Two positive margins will combine to become one margin. Its size will be equal to the largest individual
+            margin.</p>
+        <div class="a border-1px-red">positive</div>
+        <div class="b border-1px-red">positive</div>
+        <p>Two negative margins will collapse and the smallest (furthest from zero) value will be used.</p>
+        <div class="c border-1px-blue">negative</div>
+        <div class="d border-1px-blue">negative</div>
+
+        <p>If one margin is negative, its value will be subtracted from the total.</p>
+        <div class="e border-1px-green">positive</div>
+        <div class="f border-1px-green">negative</div>
+        <p>If one margin is negative, its value will be subtracted from the total.</p>
+        <div class="g border-1px-green">negative</div>
+        <div class="h border-1px-green">positive</div>
+    </div>
+</body>
+
+</html>

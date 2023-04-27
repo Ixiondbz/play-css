@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>bootstrap is hit</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap.min.css'>
+    <style>
+        * {
+            /* border: 1px solid red; */
+        }
+
+        a {
+
+            text-decoration: none;
+        }
+    </style>
+    <script src='../js/bootstrap.bundle.min.js'></script>
+</head>
+
+<body class="">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">TuitionPlatform</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="request a tutor.html">Request a tuition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tuition list.html">Tuition list</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Tuition Sidebar Widgets Column -->
+            <div class=" ">
+
+
+
+
+
+            </div>
+            <!-- Tuition Entries Column -->
+            <div class=" ">
+
+                <h1 class="page-header">
+                    <small></small>
+                </h1>
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <?php
+                        if (is_method('get')) {
+                            $tuition_id = escape_special_characters($_GET['id']);
+                            // echo $tuition_id;
+                            $query = queryline("SELECT `student class`,`student subjects`,`teaching location`,`additional notes` FROM `tuition request`");
+                            $query .= queryline("WHERE id='{$tuition_id}'");
+
+                            $result = mysqli_query($connection, $query);
+                            // print_r($result);
+                            // print($result);
+                            while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                        <div class="col-md-6 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b>Tuition</b></h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">
+                                        Class 2
+                                    </h6>
+                                    <p class="card-text">
+                                        Subjects: Mathematics, Physics, Chemistry
+                                    </p>
+                                    <p class="card-text">
+                                        Teaching location: Rampura
+                                    </p>
+                                    <p class="card-text">
+                                        Notes: Teacher must be from BUET
+                                    </p>
+                                    <a href="tutor application.php?id=<?php echo $tuition_id; ?>"
+                                        class="card-link"><button name="apply" class="btn btn-primary" >Apply</button></a>
+                                    <div >
+                                        <p class="text-start">
+                                            Share this tuition:
+                                        </p>
+                                        <div class="col justify-content-between w-50">
+                                            <a
+                                                href="https://www.facebook.com/sharer.php?u=<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>">
+                                                <img class="img-fluid img-thumbnail col-2" src="../imgs/fb.png"
+                                                    alt="Share on Facebook">
+                                            </a>
+                                            <a href="whatsapp://send?text=<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>"
+                                                data-action="share/whatsapp/share">
+                                                <img class="img-fluid img-thumbnail col-2" src="../imgs/whatsapp.png"
+                                                    alt="Share on Whatsapp">
+                                            </a>
+                                            <a
+                                                href="https://twitter.com/intent/tweet?text=<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>">
+                                                <img class="img-fluid img-thumbnail col-2" src="../imgs/twitter.png"
+                                                    alt="Share on Twitter">
+                                            </a>
+                                            <a
+                                                href="https://www.reddit.com/submit?url=<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>">
+                                                <img class="img-fluid img-thumbnail col-2" src="../imgs/reddit.png"
+                                                    alt="Share on Reddit">
+                                            </a>
+                                            <a
+                                                href="mailto:?subject=[Tuition Post]&body=[<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>]">
+                                                <img class="img-fluid img-thumbnail col-2" src="../imgs/mail.png"
+                                                    alt="Share via Email">
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <?php
+
+                                            ?>
+                                </div>
+                            </div>
+                        </div>
+                        <?php
+                            }
+                        }
+                        ?>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+
+    </div>
+
+</body>
+
+</html>

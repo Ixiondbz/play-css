@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>bootstrap is hit</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap.min.css'>
+    <script src='../js/bootstrap.bundle.min.js'></script>
+</head>
+
+<body class="">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">TuitionPlatform</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="request a tutor.html">Request a tuition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tuition list.html">Tuition list</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container w-75 p-3">
+        <div class="row">
+            <div class="text-center">
+                <h4>Tuition search results</h4>
+                <!-- <p>Search for tuitions near you 😊</p> -->
+
+                <form action="tuition search.php" method="post">
+                    <div class="input-group">
+                        <input class="form-control" type="search" name="search" id="" placeholder="search by locations">
+                        <span class="input-group-btn">
+                            <button name="submit" class="btn btn-default" type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+
+                <!-- /.input-group -->
+            </div>
+            <!-- Tuition Entries Column -->
+            <div class="container">
+
+                <h1 class="page-header">
+                    <small></small>
+                </h1>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card" style=" margin-bottom: 15px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tutor needed for</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">
+                                        Class 2, Bashundhara
+                                    </h6>
+                                    <p class="card-text">
+                                        Subjects: Mathematics, English, Geography
+                                    </p>
+                                    <a href="tuition info.php?id=<?php echo $row['id']; ?>" class="card-link">See more
+                                        details..</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style=" margin-bottom: 15px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tutor needed for</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">
+                                        Class 2, Bashundhara
+                                    </h6>
+                                    <p class="card-text">
+                                        Subjects: Mathematics, English, Geography
+                                    </p>
+                                    <a href="tuition info.php?id=<?php echo $row['id']; ?>" class="card-link">See more
+                                        details..</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style=" margin-bottom: 15px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tutor needed for</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">
+                                        Class 2, Bashundhara
+                                    </h6>
+                                    <p class="card-text">
+                                        Subjects: Mathematics, English, Geography
+                                    </p>
+                                    <a href="tuition info.php?id=<?php echo $row['id']; ?>" class="card-link">See more
+                                        details..</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style=" margin-bottom: 15px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tutor needed for</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">
+                                        Class 2, Bashundhara
+                                    </h6>
+                                    <p class="card-text">
+                                        Subjects: Mathematics, English, Geography
+                                    </p>
+                                    <a href="tuition info.php?id=<?php echo $row['id']; ?>" class="card-link">See more
+                                        details..</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+
+    </div>
+
+</body>
+
+</html>

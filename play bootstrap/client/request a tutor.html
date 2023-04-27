@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>bootstrap is hit</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap.min.css'>
+    <script src='../js/bootstrap.bundle.min.js'></script>
+</head>
+
+<body class="">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">TuitionPlatform</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="request a tutor.html">Request a tuition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tuition list.html">Tuition list</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container w-75 p-3">
+        <div class="">
+            <div class=" ">
+                <h2 class="text-center">Request for a tutor </h2>
+                <form action="request a tuition.php" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <!-- <label for="parent_name">parent name</label> -->
+                        <input type="text" class="form-control" name="parent_name" placeholder="Parent's name ">
+                    </div>
+
+                    <div class="mb-3">
+                        <!-- <label for="student_name">student name</label> -->
+                        <input type="text" class="form-control" name="student_name" placeholder="Student's name">
+                    </div>
+
+                    <div class="mb-3">
+                        <!-- <label for="student_class">student class</label> -->
+                        <input type="text" class="form-control" name="student_class" placeholder="Student's class">
+                    </div>
+
+                    <div class="mb-3">
+                        <!-- <label for="student_subjects">student subjects</label> -->
+                        <input type="text" class="form-control" name="student_subjects"
+                            placeholder="Student's subjects">
+                    </div>
+
+                    <div class="mb-3">
+                        <!-- <label for="teaching_location">teaching location</label> -->
+                        <input type="text" class="form-control" name="teaching_location"
+                            placeholder="Teaching location">
+                    </div>
+
+                    <div class="mb-3">
+                        <!-- <label for="additional_notes">additional notes</label> -->
+                        <input type="text" class="form-control" name="additional_notes" placeholder="Additional notes">
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Send Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+</body>
+
+</html>
